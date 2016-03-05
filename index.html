@@ -1,0 +1,904 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Eureka is the Techno cultural festival of SIET Allahabad, one of the biggest of its kind. It is being held from Apr 22th to 25th for the 2015 edition. It has many spotlight events like Decibels, Tarang, Choreo, Dramatics etc. This year Eureka brings to you xyz, ABC, PQR, STU and many other professional artists from around the worlf for its professional shows and culture festival."> 
+		<meta name="keywords" content="Eureka, india, college, students, fest, allahabad, UP, biggest festival,eureka 2015, xyz, pqr, abc"> 
+		<meta name="author" content="Web-Operations team, SIET Allahabad :: headed by Mr. Radha Raman Chander  & Prashant Shrivastava ">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Eureka 2k!v - Techno Cultural Festival of SIET Allahabad</title>
+		<script type="text/javascript">
+  			if (screen.width <= 800) {
+  			  window.location = "main/";
+  					}
+		</script>
+		<style type="text/css">
+			#over{
+			position:absolute;
+			background-color:#000;
+			width:100%;
+			height:100%;
+			top:0px;
+			left:0px;	
+			z-index:10000000;
+				
+			}
+				.hospitext{
+					
+				top:20px;
+				height:280px;	
+					
+				}
+			ul,li {
+			  margin:0;
+			  padding:0;
+			  border:0;
+			  outline:0;
+			  font-size:100%;
+			  vertical-align:baseline;
+			  background:transparent;
+			}   
+			#led1{
+			display:none;	
+			}
+			#led3{
+			display:none;
+			}
+			body {
+				margin:0;
+				border:0;
+				padding:0;
+				width:100%;
+				height:100%;
+				background-color:#000;
+				overflow-y:hidden;
+			}
+			html {
+				overflow-y:hidden;
+				overflow-x:hidden;
+			}
+			#slider, #home_container{
+			-moz-box-shadow:     0 0 25px #000;
+					-webkit-box-shadow:  0 0 25px #000;
+					box-shadow:          0 0 25px #000;
+
+			}
+			#aniHolder div {position:absolute; width:280px; height:85px; display:none;
+			}
+			#titlespons{
+				position:absolute;
+				color:#FFF;
+				bottom:195px;
+				font-size:17px;
+				font-family: Georgia, Serif;;
+				left:-9px;
+				text-align:center;
+				width:199px;
+			}
+
+			#spons-ticker {
+				position:absolute;
+				left:10px;
+				bottom:60px;
+				width:199px;
+				height:130px;
+				background-color:transparent;
+				z-index:0;
+			}
+			#hospi_wheel{
+				transition: transform 1s;
+				-o-transition: -o-transform 1s;
+				-webkit-transition: -webkit-transform 1s;
+				-moz-transition: -moz-transform 1s;
+				z-index:2;
+			}
+			.cover {
+				background-image:url(images/cover.png);
+				background-repeat:no-repeat;
+				height:120px;
+				width:86px;
+				position:relative;
+				top:0px;
+			}
+			.container {
+				background-color:#000;
+				height:320px;
+				width:466px;
+				top:50%;
+				left:50%;
+				position:absolute;
+				margin-left:-233px;
+				margin-top:-160px;
+				display:none;
+			}
+			/*.slot-wrapper {
+				position:relative;
+				top:50%;
+				left:50%;
+				margin-left:-149px;
+				margin-top:-60px;
+				height:120px;
+				width:310px;
+				
+			}*/
+			.p {
+				background-color:transparent;
+				width:20px;
+				height:120px;
+				float:left;
+			}
+			/*.slot {
+				background-color:#fff;
+				background:#fff url("images/reel_normal.png") repeat-y; 
+				width:86px;
+				height:120px;
+				float:left;
+				background-position:0 4px;
+				/*border:#FFF solid thin;*/
+				-moz-box-shadow:     0 0 5px #FFF;
+					-webkit-box-shadow:  0 0 5px #FFF;
+					box-shadow:          0 0 5px #FFF;
+			}
+			.motion {
+				background-color:#fff;
+				background:#fff url("images/reel_blur.png") repeat-y;
+			}
+			*/
+
+
+			#slider1
+			{
+				background-color: none;
+			}
+			.panel5
+			{
+				padding:15px;
+				font-family: verdana;
+			}
+			.roundabout-holder {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				height: 300px;
+				width: 500px;
+				}
+			.roundabout-moveable-item {
+				height: 300px;
+				width: 500px;
+				cursor: pointer;
+				box-shadow: 0 0 15px #000;
+				color: #000;
+				
+				background: #fcfff4; /* Old browsers */
+			background: -moz-linear-gradient(-45deg,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(-45deg,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(-45deg,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(-45deg,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* IE10+ */
+			background: linear-gradient(135deg,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+
+			.roundabout-in-focus {
+				cursor: auto;
+			}
+				#slider {
+							width:540px;
+							height:325px;
+							
+							/*IE bugfix*/
+							padding:0;
+							margin:0;
+						}
+						
+						#slider li { list-style:none; }
+				#slideshow_spon { 
+					margin: auto; 
+					position: relative; 
+					width: 100px; 
+					height: 50px; 
+					box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+				}
+
+				#slideshow_spon > div { 
+					position: absolute; 
+					top:0px;
+					left: -30px; 
+					right: 10px; 
+					bottom: 10px; 
+				}
+				#slideshow_spon img { 
+					width:200px;
+					height:100px;
+				}
+				.you_tube
+				{
+					width:800px;
+					height:400px;
+					position:absolute;
+					top:200px;
+					left:300px;
+				}
+				.you_tube video
+				{
+					width:800px;
+					height:400px;
+					-webkit-box-shadow: 0px 0px 5px 1px rgba(214,207,214,1);
+					-moz-box-shadow: 0px 0px 5px 1px rgba(214,207,214,1);
+					box-shadow: 0px 0px 5px 1px rgba(214,207,214,1);
+				}
+				.android_body {
+					z-index:9999;
+					float:right;
+					top:130px;
+					right:1px;
+					width:150px;
+					height:150px;
+					background-color: trasparent;
+					position: relative;
+					-webkit-animation-name: example; 
+					-webkit-animation-duration: 5s; 
+					-webkit-animation-iteration-count: infinite; 
+					-webkit-animation-direction: reverse; 
+					animation-name: example;
+					animation-duration: 5s;
+					animation-iteration-count: infinite;
+					animation-direction: reverse;    
+				}
+				@-webkit-keyframes example {
+						0%   {background-color:trasparent; right:0px; top:130px; -ms-transform: rotate(0deg); -webkit-transform:rotate(0deg); transform: rotate(0deg);}
+						25%  {background-color:yellow trasparent; right:50px; top:130px; -ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);    transform: rotate(90deg);}
+						50%  {background-color:blue trasparent; right:50px; top:100px; -ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);    transform: rotate(180deg);}
+						75%  {background-color:green trasparent; right:0px; top:100px; -ms-transform: rotate(270deg);-webkit-transform: rotate(270deg);    transform: rotate(270deg);}
+						100% {background-color:red trasparent; right:0px; top:130px; -ms-transform: rotate(360deg);-webkit-transform: rotate(360deg);    transform: rotate(360deg);}
+					}
+				@keyframes example {
+						0%   {background-color:trasparent; right:0px; top:130px; -ms-transform: rotate(0deg); -webkit-transform:rotate(0deg); transform: rotate(0deg);}
+						25%  {background-color:yellow trasparent; right:50px; top:130px; -ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);    transform: rotate(90deg);}
+						50%  {background-color:blue trasparent; right:50px; top:100px; -ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);    transform: rotate(180deg);}
+						75%  {background-color:green trasparent; right:0px; top:100px; -ms-transform: rotate(270deg);-webkit-transform: rotate(270deg);    transform: rotate(270deg);}
+						100% {background-color:red trasparent; right:0px; top:130px; -ms-transform: rotate(360deg);-webkit-transform: rotate(360deg);    transform: rotate(360deg);}
+					}					
+					.android
+					{
+					width:150px;
+					height:150px;
+					display:inline-block;
+					background:url(images/android.png);
+					-webkit-border-radius:75px;
+					-moz-border-radius:75px;
+					border-radius:75px;
+					
+					}
+
+			</style>
+		<link rel = "stylesheet" type="text/css" href="css/styles.css" />
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="css/rhinoslider-1.05.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/loading_new2.js"></script>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
+		<script src="js/scripts_pics.js"></script>
+		<script src="js/scripts_nav_new1.js"></script>
+		<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script src="js/jquery.mCustomScrollbar.js"></script>
+		<script src="js/events_config.js"></script>
+		<script src="js/spotlight_config.js"></script>
+		<script src="js/events_classes.js"></script>
+		<script src="js/scripts_proshows.js"></script>
+		<script src="js/scripts_wcs.js"></script>
+		<script src="js/jQueryRotate.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/jquerycycle.js"></script>
+		<script type="text/javascript" src="js/scrolling.js"></script>
+		<script type="text/javascript" src="js/scripts_new.js"></script>
+		<script type="text/javascript" src="js/log_reg.js"></script> 
+		<script src="jquery.spritely.js"></script>
+		<script src="jquery.backgroundPosition.js"></script>
+		<script src="slot.js"></script>
+		<script src="js/jquery.roundabout.min.js"></script>
+		<script type="text/javascript" src="js/rhinoslider-1.05.min.js"></script>
+		<script type="text/javascript" src="js/mousewheel.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/snow.js"></script> 
+		<script type="text/javascript" src="js/slider_spon.js"></script> 
+		<script>
+			$(document).ready(function() {
+				$('#slider1').roundabout({
+					autoplay: false,
+					autoplayDuration: 5000,
+					minOpacity: 1.0,
+					autoplayPauseOnHover: true
+				});
+				$(".panel5").each(function(){
+					$(this).click(function(){
+						//$('#slider1').autoplayStart();
+					});
+					$(this).mCustomScrollbar({
+						scrollButtons:{
+							enable:false
+						}
+					});
+				});
+			});
+			function writeCookie(name, value, days) {
+			  // By default, there is no expiration so the cookie is temporary
+			  var expires = "";
+
+			  // Specifying a number of days makes the cookie persistent
+			  if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toGMTString();
+			  }
+
+			  // Set the cookie to the name, value, and expiration date
+			  document.cookie = name + "=" + value + expires + "; path=/";
+			}
+
+			function readCookie(name) {
+			  // Find the specified cookie and return its value
+			  var searchName = name + "=";
+			  var cookies = document.cookie.split(';');
+			  for(var i=0; i < cookies.length; i++) {
+				var c = cookies[i];
+				while (c.charAt(0) == ' ')
+				  c = c.substring(1, c.length);
+				if (c.indexOf(searchName) == 0)
+				  return c.substring(searchName.length, c.length);
+			  }
+			  return null;
+			}
+
+			function eraseCookie(name) {
+			  // Erase the specified cookie
+			  writeCookie(name, "", -1);
+			}
+		</script>
+		<script type="text/javascript">
+
+			  var _gaq = _gaq || [];
+
+			  _gaq.push(['_setAccount', 'UA-27682594-1']);
+
+			  _gaq.push(['_setDomainName', 'saarang.org']);
+
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+			  })();
+
+		</script>
+
+		<script type="text/javascript">
+			function clearForm() {
+				var Forms = [document.forms['regs_form'].elements, document.forms['login_form'].elements];
+				for (j = 0; j < Forms.length; j++) {
+					var frm_elements = Forms[j];
+					for (i = 0; i < frm_elements.length; i++) {
+						field_type = frm_elements[i].type.toLowerCase();
+						switch (field_type) {
+							case "text":
+							case "password":
+							case "textarea":
+							case "hidden":
+								frm_elements[i].value = "";
+								break;
+							case "radio":
+							case "checkbox":
+								if (frm_elements[i].checked) {
+									frm_elements[i].checked = false;
+								}
+								break;
+								//case "select-one":
+								//case "select-multi":
+								//frm_elements[i].selectedIndex = -1;
+								//break;
+							default:
+								break;
+						}
+					}
+				}
+				$('#log_reg span').html('');
+			}
+			$(document).ready(function () {
+				$("#logout_but, #log_close").hide();
+				$("#logout_but, #log_close, #log_but").css({
+					zIndex:1100
+				});
+				var status = false;
+				$("#log_but").click(function () {
+					clearForm();
+					if(!status)
+					{
+						$("#page_container").stop().animate({
+							height:window.innerHeight
+						}, 1500, function(){	
+						});
+						//$("#log_reg").stop().slideDown(1500);
+						$("#log_close").show();
+						status = !status;
+						
+					}
+					else
+					{
+						$("#page_container").stop().animate({
+							height:0
+						}, 1500, function(){
+							
+						});
+						//$('#log_reg').stop().slideUp(1500);
+						$("#log_close").hide();
+						status = !status;
+					}
+				});
+				$("#log_close").click(function () {
+					clearForm();
+					$("#page_container").stop().animate({
+						height:0
+					}, 1500);
+					//$('#log_reg').stop().slideUp(1500);
+					$("#log_close").hide();
+					status =! status;
+				});
+				check_cookie();
+			});
+
+			function check_cookie() {
+				if ((name = readCookie("saar_log_name")) != null) {
+					$('#log_but').hide();
+					$('#logout_but').show();
+					$('#logout_but').html('Hi ' + name + '. Logout');
+				}
+			}
+		</script>
+		<script>
+			var entered = true;
+		</script>
+		<script> //ticker_script
+			var aniSpd01 = 2000;
+			var fadeSpd01 = 1000;
+			$(function() {
+				var startIndex = 0;
+				var endIndex = $('#aniHolder div').length;
+				$('#aniHolder div:first').stop(true, false).fadeIn(fadeSpd01);
+				window.setInterval(function() {
+				$('#aniHolder div:eq(' + startIndex + ')').stop(true, false).fadeOut(fadeSpd01);
+					startIndex++;
+					$('#aniHolder div:eq(' + startIndex + ')').stop(true, false).fadeIn(fadeSpd01);
+					if (endIndex == startIndex) startIndex = 0;
+				}, aniSpd01);
+			});
+		</script>
+		
+	</head>
+	<body>
+		<audio controls loop autoplay style='display:none;'>
+		  <source src="images/backvoice.mp3" type="audio/mpeg">
+		</audio>
+		<div class='android_body'>
+		<a href='#' class='android'></a>
+		</div>
+		<div id="over"></div>
+		<div id="log_but">Login</div>
+		<div id="log_close">X</div>
+		<div id="logout_but">Logout</div>
+		<div id="page_container" style="display:block; z-index: 1000; width: 850px; height: 100%; margin-left: auto; margin-right: auto; position: relative; ">
+			<div id="log_reg">
+				<!-- Use the below two forms ( starting from next line, till next comment
+				) without any changes, else everything will be screwed-->
+				<div id="reg_div">
+					<p id="log_head">New user? Register</p>
+					<form method="post" action="http://saarang.org/2013/main/none" name="regs_form">Name :
+						<input type="text" name="name" class="inp" id="name" />
+						<br />Email :
+						<input type="text" name="email" class="inp" id="email" onBlur="ver_email()"
+						/><span id="ver_email" style="font-size:12px;color:#F00;"></span>
+
+						<br />Mobile no. :
+						<input type="text" name="mobile" class="inp" id="mobile"/>
+
+						<br />
+						 Password :
+						<input type="password" name="password" class="inp" id="password"
+						onBlur="ver_pas1()" /><span id="ver_pas1" style="font-size:12px;color:#F00;"></span>
+
+						<br />Password(retype) :
+						<input type="password" name="password_ret" class="inp"
+						id="password_ret" onKeyUp="ver_pas2()" onBlur="ver_pas3()" /><span id="ver_pas2" style="font-size:12px;color:#F00;"></span>
+
+						<br />College :
+						<input type="text" name="colg" class="inp" id="colg" />
+						<br />College Id :
+						<input type="text" name="colgid" class="inp" id="colgid" />
+						<br />Gender :
+						<select style="float:right;margin-top:12px;" id="gender" name="gender">
+							<option value="Male" selected="selected">Male</option>
+							<option value="Female">Female</option>
+						</select>
+						<br />City:
+						<input type="text" name="city" class="inp" id="city" />
+						<br />State:
+						<input type="text" name="state" class="inp" id="state" />
+						<br />
+						<input type="button" id="submit" value="Register" name="submit" />
+						<br />
+					</form> <span id="regs_msg" style="display:none;font-size:12px;line-height:20px;text-align:center;clear:right;margin-top:20px;"></span>
+
+				</div>
+				<div id="log_div">
+					<p id="log_head">Login</p>
+					<form method="post" action="http://saarang.org/2013/main/none" name="login_form">Email Id:
+						<input type="text" name="emailid" class="inp" id="emailid" onBlur="ver_email1()"
+						value="" /><span id="ver_email1" style="font-size:12px;color:#F00;"></span>
+
+						<br />Password:
+						<input type="password" name="password" class="inp" id="pass"
+						/>
+						<br />
+						<input type="button" id="submit" value="Login" name="log_submit" />
+						<input type="checkbox" name="stay" id="stay" value="stay" /><i id="rem" style="font-size:13px">Remember me</i>
+
+						<br />
+					</form> <span id="login_msg" style="display:none;font-size:12px;line-height:20px;text-align:center;clear:right;margin-top:20px;"></span> 
+				</div>
+				<!--Till this line-->
+			</div>
+		</div>
+		   <div id="site_overlay_right"></div>
+		   <div id="ticker_new" style="position:absolute; left:10px; top:20px; width:300px; height:140px; z-index:100; background-image:url(updates1.png); background-repeat:no-repeat; color:#FFF; font-family:Arial, Helvetica, sans-serif">
+				<div id="aniHolder" style="position:absolute;font-family:'Century Gothic', sans-serif;font-size:15px; top:40px; left:15px">        
+					<div>Welcome to Eureka 2k!v , SIET Allahabad</div>
+					<div>Website under Construction !!! </div>
+				</div>
+			</div>
+		<div id="site_overlay_left">
+			<div id="power-by" style="font-family:'Century Gothic', sans-serif;position: absolute;bottom: 7%;color:#fff;text-align: center;left: 16px;z-index: 100;font-size:14px">Web Team</div>
+		</div>
+		<div id='titlespons' style="font-family:'Century Gothic', sans-serif;">Our Sponsors</div>
+		<a href="#" target='_blank'>
+			<div id="spons-ticker" style="z-index:0">
+				<div id="slideshow_spon">
+				   <div>
+					 <img src="images/new/1.jpg">
+				   </div>
+				   <div>
+					 <img src="images/new/2.jpg">
+				   </div>
+				   <div>
+					 <img src="images/new/3.jpg">
+				   </div>
+				</div>
+			</div>
+		</a>
+		<div id="main_wrapper"> 
+			<section id="home_page" name="home_page">
+				<img src="images/logo.gif" style="display:none"></img>
+				<div id="home_container" style="top:220px;color:#CCC; font-family:'Century Gothic', sans-serif;width:540px; font-size:20px; font-weight:600;  padding:15px; ">
+					<ul id="slider">
+						<li><img src="images/slider/01.jpg" alt="" /></li>
+						<li><img src="images/slider/02.jpg" alt="" /></li>
+						<li><img src="images/slider/03.jpg" alt="" /></li>
+						<li><img src="images/slider/04.jpg" alt="" /></li>
+						<li><img src="images/slider/05.jpg" alt="" /></li>
+					</ul>
+				</div>
+
+			</section>
+			<section id="spotlight_page">
+				<div id="spotlight_container">
+					<div id="spotlight_wrapper">
+					</div>
+				</div>
+			</section>
+			<section id="proshows_page">
+						<div id="overlay_ps"></div>
+				<div id="proshows_wrapper">
+					<div id="proshows_main">
+					
+						<div class="text_area"></div>
+					</div>
+				</div>
+				<div id="ticketsales" style="border-radius: 25%;box-shadow: 0 0 10px #000;background-color: white;font-family: Century Gothic;position:absolute; margin:0 auto; top: 55%; left: 15%; text-align:center; font-size: 20px; color:#fff; border: solid thick #FF8500; padding:5px">
+					<a href="http:#" style="color: #black; text-decoration:none;" target="_blank">GET<br>YOUR<br>PASSES</a>
+				</div>
+			</section>
+			<section id="wcs_page">
+				<div id="overlay_wcs"></div>
+				<div id="wcs_wrapper">
+					<div id="wcs_main">
+						<div class='you_tube'>
+							<video controls>
+							  <source src="movie.mp4" type="video/mp4">
+							  <source src="movie.ogg" type="video/ogg">
+							  Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="events_page">
+				<div id="events_container">
+					<div id="events_wrapper">
+					</div>
+				</div>
+				<div id="overlay_events"></div>
+			</section>
+			<section id="eunoia_page">
+				<div id="eunoia_container">
+					<div id="eunoia_wrappper">
+						<!-- AnythingSlider #1 -->
+						<ul id="slider1">
+							<li class="panel5">
+								<center><img src="images/eunoia/logo.gif" width=300></img></center>
+								<p>SIET presents 'Eureka', an umbrella for all of SIETAN's various social cause activities. This is SIETANS's newest initiative,  doing our bit to give back and make a difference to the lives of the less fortunate.</p>
+								<p>SIET 'Eureka' takes social cause events farther than ever. Under this are associations with __________ , Make A Difference, _______, SIET's Big Plan, and SIET 'Building Dreams'. SIET 'Eunoia' is championing the causes of better nutrition, literacy, expression, and rural development.</p>
+								<p><i>'SIET has lately become largely commercial'</i>. We need to get it back to its roots! Through Eunoia, we aim to be socially inclusive - of every strata of society, and for the benefit those who have been, sadly, excluded. We are looking for an impact across all walks of life. SIET is one body, and may not have a very large impact on its own, but for the belief of empowerment. We are trying to set an example, be the first ones to start a norm in a country where there isn't generally much care shown for society.</p>
+								<br><br><br><br><br><br><br><br><br><br>
+							</li>
+							<li class="panel5">
+								<p style="text-align:center;"><strong>SMILE FOUNDATION</strong></p>
+								<center><a href="http://smilefoundationindia.org/" target='_blank'><img src="images/eunoia/smile.png" width=300></img></a></center>
+								<p style="font-size:'10px';"><strong>SPREADING MORE SMILES</strong></p>
+								<p>SIET supports Smile Foundation in providing nutrition 100 underprivileged children.</p>
+								<p>Smile Foundation and SIET presents Nutrition for better literacy. This is a social campaign to support the underprivileged with proper nutrition. As you might know mal-nutrition is one of the biggest issues faced by our society. This is an initiative taken up Smile Foundation along SIET - SIET allahabad towards this cause.</p>
+								<p style="font-size:'10px';"><strong>The Campaign</strong></p>
+								<p>Smile Foundation and SIET strongly believes that good nutrition leads to better literacy.</p>
+								<p>A nutritious meal is an incentive not to miss school for these children and we all will agree that a healthy mind resides in a healthy body. It takes INR 1560 to promise a nutritious meal to a child for a year. The campaign primarily focuses on improving the quality of nutrition of the underprivileged children. Students of SIET allahabad have volunteered to help raise the resources for the campaign. We wish to spread more smiles by feeding a nutritious meal to more than 100 children through this campaign.</p>
+								<p style="font-size:'10px';"><strong>About Smile Foundation</strong></p>
+								<p>Smile Foundation is a national level development organization that benefits 200,000 underprivileged children and youth directly, across 22 states in India through 185 development projects in subjects like education, healthcare, livelihood and girl child empowerment. Following the principles of Good
+								Governance, Smile Foundation works on its innovative model of Social Venture Philanthropy.</p><br><br><br><br><br>
+							</li>
+				
+							<li class="panel5">
+								<p style="text-align:center;"><strong>MAKE A DIFFERENCE</strong></p>
+								<center><a href="http://makeadiff.in/" target='_blank'><img src="images/eunoia/mad.png" width=400></img></a></center>
+								<p>This year SIET's association with MAD is themed around Hope For Change. The first campaign that will kickstart during SIET is the MAD dabba project. This is a sustainability initiative in which the waste paper generated during SIET will be collected efficiently and recycled. Apart from this, there will be a Mosaic of hope, a Limca record breaking mosaic on which messages of hope will be stuck in the form of post-its by the visitors of SIET'13. SIET will be donating a sum of money to MAD, which will be used to fund MAD's numerous projects in helping underprivileged kids get access to quality education and a better future.</p><p>MAD is a non-profit organization, that works with underprivileged kids in orphanages and shelter homes across the country. It was started in 2006 by 6 college students in Cochin and today it has grown to 1500 active, volunteers across 23 cities in India. MAD is committed to providing quality education to over 4500 children.</p>
+							</li>
+							<li class="panel5">
+								<p style="text-align:center;"><strong>MILAAP</strong></p>
+								<center><a href="http://www.milaap.org/" target='_blank'><img src="images/eunoia/milaap.png" width=400></img></a></center>
+								<p>SIET is happy to join hands with Milaap.org to bring education and training to our underprivileged youth. The appeal is to the philanthropist in everybody to contribute to the welfare of deserving youngsters who are the future of this country by giving out a loan which will be repaid to them in about 18 months. As little as Rs. 200, it will go a long way in securing the future of a youngster. Remember, 100% of your money comes back to you - so be generous! Milaap is an online platform that enables people around the world to give a loan to the working poor in India. Based in Bangalore, India, with its headquarters in Singapore, Milaap's loans give people access to basic needs like clean drinking water, sanitation and renewable energy, as well as skills development via vocational training which leads to jobs with steady income.</p>
+								<p>For further information visit our fund raiser page: <a href="http://fundraiser.milaap.org/campaigns/saarang" target="_blank">http://fundraiser.milaap.org/campaigns/SIET</a></p>
+								<p><b>About Milaap</b>: Milaap is a social enterprise that enables people around the world to give a loan to the working poor in India. Milaap is the world's first online micro lending platform that enabled non-Indians and non-resident Indians to make loans to India. Milaap's loans give people access to basic needs like clean drinking water, sanitation and renewable energy, as well as skills development via vocational training which leads to jobs with steady income.</p>
+								<p>By sourcing funds from individuals all over the world, Milaap has been able to eliminate the need for their partners MFIs to borrow from banks. Thus, the end-borrowers get to avail low-cost loans.</p>
+							</li>
+							<li class="panel5">
+								<p style="text-align:center;"><strong>DAWN TO DUSK</strong></p>
+								<center><a href="http://www.nevilleendeavours.com/" target='_blank'><img src="images/eunoia/d2d.png" width=150></img></a></center>
+								<p>Every year SIET has taken up a lot of social awareness programmes so as to help improve the society. This year as a part of SIET 'Eunoia' we are championing the causes of better nutrition, literacy, expression, and rural development by associating with NGO's such as Smile Foundation, MAD, Milaap and AID India.</p>
+								<p>As an epilogue to all the social initiatives taken up by SIET, this year members of SIET are supporting the 'Dawn to Dusk' Run. The 'Dawn to Dusk - 2013' is to be held on Sunday, 13th January, 2013. Neville J Bilimoria has come forward to raise funds through this 12 hour event. All the funds raised by SIET from this would be donated to Smile Foundation supporting the cause 'Nutrition for better Literacy'.</p>
+								<p>For further information on the run please visit <a href="http://www.nevilleendeavours.com/">nevilleendeavours.com</a></p>
+							</li>
+							<li class="panel5">
+								<p style="text-align:center;"><strong>SIET BUILDING DREAMS</strong></p>
+								<center><a href="http://www.eurekachild.org/" target='_blank'><img src="images/eunoia/eureka.png" width=400></img></a></center>
+								<p style="font-size:'10px';"><strong>Building Dreams:</strong></p> 
+								<p>'Building Dreams' is an initiative taken up by SIET and Eureka Child which seeks to reach out to as many kids as possible, and inspire them to dream for not just a better future but a rewarding one at that. The initiative saw SIET send mentors from SIET allahabad's official cultural clubs to two <strong>Eureka Child</strong> (An AID INIDA initiative) centres to teach underprivileged children Speaking Skills, Dramatics, and Western Music for three hours (3 pm to 6 pm) each on consecutive Saturdays - 27th October and 3rd November. A huge success, both mentors and mentees alike were reluctant to take leave. Pictures were taken, and a load of thanks expressed on each side, with the mentors taking away feelings of awe for their young friends, who were so positive and full of life, energy and dreams.</p>
+								<p>Founded in 1996 by a team of SIET and BITS alumni, Eureka Child empowers local communities through projects in the fields of education, health, and livelihood. Its flagship project - Eureka SuperKidz, is currently active in 1,000 villages across Tamil Nadu, making a positive difference to the lives of over 60,000 families through the quality education children receive and the employment generated locally.</P> 
+							</li>
+
+						</ul>  <!-- END AnythingSlider #1 -->
+
+						<br><br>
+					</div>
+				</div>
+			</section>
+			<section id="hospitality_page">
+				<div id="hospi_container"><div id="hospi_wrapper">
+					<div id="hospi_content_container"  class="content" style="background-position: 99% 0;background-image:url('images/rect.png');background-size: 103.4% 100%;position:absolute; left:640px; top:255px; width:508px; height:269px; text-height:20px; font-size:16px; font-weight:400; color:	#FFF; vertical-align:middle; overflow:auto; background-color:#000; opacity:0.8; padding:15px;z-index:1; font-family:'Century Gothic', sans-serif; border:#CCC solid thin"; >
+					</div>
+					<div id="hospi_wheel" style="position: absolute; left:220px; top:200px; width: 400px; height: 400px;">
+						<img id="hospi_wheel_img" src="images/wheel.png" usemap="#wheel_map" border="0" width="400" height="400" alt="" />
+							<map id="_wheel_map" name="wheel_map">
+								<area shape="rect" id="item7" coords="112,315,162,365" href="#!/hospitality" alt="reach" title="Reaching IITM"    />
+								<area shape="rect" id="item4" coords="108,23,158,73" href="#!/hospitality" alt="queries" title="Queries"    />
+								<area shape="rect" id="item3" coords="231,29,281,79" href="#!/hospitality" alt="intro" title="Introduction"    />
+								<area shape="rect" id="item2" coords="312,106,362,156" href="#!/hospitality" alt="desk" title="Hospitality Desk"    />
+								<area shape="rect" id="item1" coords="317,234,367,284" href="#!/hospitality" alt="acc" title="Accomodation Portal"    />
+								<area shape="rect" id="item8" coords="237,318,287,368" href="#!/hospitality" alt="info" title="Information"    />
+								<area shape="rect" id="item5" coords="32,113,82,163" href="#!/hospitality" alt="control" title="Control Room"    />
+								<area shape="rect" id="item6" coords="21,228,71,278" href="#!/hospitality" alt="alternate" title="Alternate Accomodation"    />
+							</map>
+							<p class="hospitext" id="item17" style="display:none">Outstation participants can reach the SIET allahabad campus via bus, auto or call-taxi which is available just outside the station.<br />
+							<br />
+							<strong>The SIETM campus:</strong><br />
+							1. Is located adjacent to the Sardar Patel Road<br />
+							2. Is midway between the Raj Bhavan and Adyar bus terminus<br />
+							3. Is 12 kilometers from Chennai Central<br />
+							4. Landmarks - Guindy Snake Park adjacent to the SIET Main Gate<br />
+							5. Central Leather Research Institute campus opposite to ours<br />
+							5. Is near Anna University<br />
+							<br />
+							<strong>A. From Chennai Central</strong><br />
+							1. Hire an auto/taxi to SIET allahabad. You can catch institute busses from the SIET allahabad main gate to control room<br />
+							2. You can catch a bus just outside the Chennai Central. 18B and 19S are the direct buses to SIETM (Get down at Gandhi Mandapam/SIETM). From the gate there are SIETM buses to the hostels, every 20 minutes<br />
+							3. The fare from Chennai Central will cost you approximately Rs.120 for auto and Rs. 200 for a taxi till the Main Gate. For your convenience, fix the rate before boarding the auto.<br />
+							<br />
+							<strong>B. From Egmore Station:</strong><br />
+							1. Catch 23C which heads directly to SIETM. From the main gate there are SIETM buses to the hostels, every 20 minutes<br />
+							2. The auto and taxi fares from Egmore are approximately Rs.100 and Rs.150 respectively.<br />
+							<br />
+							<strong>C. From Airport:</strong><br />
+							1. Hire an auto/taxi to SIET allahabad. Inside the campus, get down at the Hospitality Control Room<br />
+							2. Or catch PP21 directly to institute or 21G to Gandhi Mandapam which is at a stone throw's distance from out gate. From the main gate there are SIETM buses to the hostels, every 20 minutes.<br />
+							<br />
+							<strong>D. From CMBT</strong>:<br />
+							1. Hire an auto/taxi to SIET allahabad (inside)<br />
+							2. Catch Bus number 23M or 5E which come directly to institute. From the main gate there are SIETM buses to the hostels, every 20 minutes.<br />
+							</p>
+							<p id="item14" class="hospitext" style="display:none">For Hospitality related queries, please reach out to us at <a href="mailto:queries@saarang.org?Subject=queries" style="color:#FFF;text-decoration:none" target="_blank"><strong>queries@SIET.org</strong></a> or
+							<a href="mailto:hospitality@saarang.org?Subject=queries" style="color:#FFF;text-decoration:none" target="_blank"><strong>hospitality@SIET.org</strong></a> <br />
+							For additional queries, contact<br />
+							Maneesh Kumar, Core Member, Hospitality Team<br />
+							<a href="mailto:maneesh@saarang.org?Subject=queries" style="color:#FFF;text-decoration:none" target="_blank"><strong>maneesh@SIET.org</strong></a><br /></p>
+								<p id="item13" class="hospitext" style="display:none">The Hospitality team functions to guide you throughout your stay with us. At SIET, we will ensure that you have all the fun you want and leave us to take care of the rest.<br />
+								<br />
+    
+							We at the Hospitality (known affectionately as 'Hospi') team shall leave no stone unturned to ensure that your stay with us is enjoyable and comfortable. In order to enable us to assist you in the best possible manner, we would request you to register your college contingent at the Hospitality web portal as early as possible. We can help you better if you intimate us about your plans in advance, so that appropriate arrangements can be made.<br />
+							We look forward to having a great time with you!<br />
+							Note: For any queries and on the spot registrations during the fest, approach the Hospitality Desk in the fest arena.</p>
+							<p id="item12" class="hospitext" style="display:none">The hospitality team at SIET will be at your service to cater to all your doubts throughout SIET. Apart from our Control room, the Hospitality Desk - which forms an indispensable part of the fest ? will be set up just outside the main venue. It is the one stop centre to answer all your queries. Registrations for a few events will also be done there. Also, you can approach the hospitality desk for other information like updates, event results, daily events, etc. For event registration at the Hospitality Desk, production of the SIET ID card is mandatory.</p>
+							<p id="item11" class="hospitext" style="display:none">You can register for on campus accomodation <a href="http://saarang.org/2013/hospi" style="color:#56B5E4;text-decoration:none" title="Hospitality Portal" target="_blank"><strong>here</strong></a>. Please note, registering here DOESNOT guarantee you accommodation on campus. Your accommodation will be confirmed only if you receive a mail from the hospitality team with a confirmation letter.
+							Also, to register for accommodation, you first need to register each individual member of the team on the SIET website.<a href="final_pricing_system.pdf" style="color:#56B5E4;text-decoration:none" title="pricing system" target="_blank"><strong>click here for pricing details</strong></a></p>
+							<p id="item18" class="hospitext" style="display:none">Set in a lush green campus spanning 620 acres in the heart of Chennai, SIET allahabad is home to 6000 students and also a few hundred monkeys, deer and blackbuck. Carved from the Guindy National Park, the SIETM which celebrated its Golden Jubilee in 2009, is blessed with rich wildlife that perhaps no other college in the world can boast of.<br />
+							<br />
+							SIET allahabad boasts one of the most vibrant student population in India with it's eclectic mix of students taking part in a variety of events on campus ranging from quizzing to hosting and excelling in technical events. Cultural activities on campus reach its peak in January as SIET fever takes over the campus. Formerly known as Mardi Gras, SIET has, over the years, evolved into the behemoth it is today.<br />
+							<br />
+							SIETM being a residential campus has 17 hostels all of which are named after rivers. This along with the fact that the campus buses used to be named after mountains has resulted in an epigram about SIET allahabad that it is the only place where the mountains move and the rivers remain still.<br />
+							<br />
+							Another distinctive feature of the campus is its lingo. A mix of English, Hindi, Telugu, Malayalam and Tamil, aspects of the campus slang has been adopted by some other Chennai colleges. Interestingly enough, the lingo has outgrown the boundaries of the college and has resulted in a Master's thesis about it in a German university.</p>
+								<p id="item15" class="hospitext" style="display:none">We at SIET, strive to make your short stay with us, as pleasant and comfortable as we can. Upon reaching the SIET allahabad campus, participants who registered for accommodation are requested to report to the Control Room, which will be operational day and night (except from 5pm to 12am which is the time for Professional Shows). Participants will be requested to produce all necessary documents at the control room. Nominal charges for accommodation will be collected here depending on the number of days you wish to avail this facility. The control room will close in the afternoon of the final day of SIET. All participants are required to carry their :<br/>
+							<br>
+							SAAR (SIET Advanced Accommodation Registration) letter (which will be made available to people whose accommodation is confirmed)<br/><br>
+							College identity cards (original and a copy) <br/><br>
+							Bonafide certificates (original and a copy)<br/><br>
+							 to avail the accommodation facilities. Participants are also expected to follow certain Rules and Regulations to help us maintain the festive atmosphere in the institute. We would be issuing SIET ID cards to all the outstation participants.</p>
+								<p id="item16" class="hospitext" style="display:none">Because of limited space on campus, we might not be able to provide accommodation to all participants who apply for accommodation. In case you don't receive a confirmation mail regarding your accommodation from the hospitality team, you could always make arrangements for your stay outside campus. We have uploaded a list of hotels and lodges for your reference.<a href="alt_accommodation_2013.pdf" style="color:#56B5E4;text-decoration:none" title="alternate accommodation" target="_blank"><strong>click here for details</strong></a></p> 
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script type="text/javascript">
+			$("#hospi_wheel").rotateAnimation(0);
+			$(document).ready(function(e){
+				$('#hospi_wheel').rotate('-22.5');
+				var list = document.getElementById("hospi_content_container").getElementsByTagName('p');
+				var i=0,prev_text;
+			$('#_wheel_map area').bind("click",function(){
+			var item_index = $(this).attr("id").slice(4);
+			//console.log(parseInt(item_index));
+			var text_index= "item1"+item_index;
+			var $wheel = $("#hospi_wheel");
+			var rotation_angle = parseInt(item_index)*45 - 45 - 22.5;
+			//$wheel.rotateAnimation(rotation_angle);
+			
+			$wheel.css('-ms-transform','rotate('+rotation_angle+'deg)'); 
+     		$wheel.css('-o-transform','rotate('+rotation_angle+'deg)');
+			$wheel.css('-moz-transform','rotate('+rotation_angle+'deg)'); 
+     		$wheel.css('-webkit-transform','rotate('+rotation_angle+'deg)');
+      		$wheel.css('transform','rotate('+rotation_angle+'deg)');  
+			var crap = document.getElementById(text_index).innerHTML;
+			$('#hospi_content_container').html(crap);
+						$(".content").mCustomScrollbar({
+					scrollButtons:{
+						enable:false
+					}
+				});
+				})
+			})
+			$(window).load(function(){
+			});
+		</script>
+    	<nav id="cards">
+	
+		</nav>
+		<div id="overlay">
+			<div class="container">
+				<div class="slot-wrapper">
+					<div id="slot1" class="slot">
+						<div class="cover"></div>
+					</div>
+					<div id="p1" class="p"></div>
+					<div id="slot2" class="slot">
+						<div class="cover"></div>
+					</div>
+					<div id="p2" class="p"></div>
+						<div id="slot3" class="slot">
+					<div class="cover"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="spons_button_above">
+		<br/>
+			<span>B</span>
+			<span>A</span>
+			<span>C</span>
+			<span>K</span>
+			<span>&nbsp;</span>
+			<span>T</span>
+			<span>O</span>
+			<span>&nbsp;</span>
+			<span>C</span>
+			<span>A</span>
+			<span>S</span>
+			<span>I</span>
+			<span>N</span>
+			<span>O</span>
+			<span style="position:absolute; left:3px;"><img src="images/downarrow.png" /></span>
+		</div>
+		<div id="spons_button_below" style="background-image:url(images/ticket-button.html); width:190px; height:45px; background-repeat:no-repeat; display:none">
+		</div>
+		<div id="spons_page" >
+			<center>
+				<div id="spons_core_info" style="font-family:'Century Gothic', sans-serif">
+					<div id="spons_title">
+						<p style="color:#FFF; font-weight:500;">TICKET SALES</p>
+					</div>
+					<div id="spons_info">
+						<p>
+							For any queries regarding Ticket Sales for SIET 2013, please contact:
+						</p>
+					</div>
+					<div id="spons_anush">
+						<p><b>Prasanna</b></p>
+						<p>07418571411</p>
+					</div>
+					<div id="spons_dhruv">
+						<p><b>Vishranth</b></p>
+						<p>+91 9443408260</p>
+					</div>
+				</div>
+			</center>
+		</div>
+		<div id="Qoverlay" style="width:100%; height:100%; position:absoute; top:0; left:0;"></div>		
+		<script>
+			$('#spons_button_below').bind("click", function () {
+
+				$("#spons_button_below").animate({ 'bottom': '-10%' }, 100);
+				$("#spons_page").animate({ 'top': '28%' }, 500);
+				setTimeout(function () { $("#spons_button_above").animate({ 'top': '28%' }, 300); }, 500);
+				//document.getElementById('spons_button_above').style.display="block";
+			});
+
+			$('#spons_button_above').bind("click", function () {
+
+				$("#spons_button_above").animate({ 'top': '-275px' }, 300);
+				setTimeout(function () {
+					$("#spons_button_below").animate({ 'bottom': '0%' }, 300);
+					$("#spons_page").animate({ 'top': '100%' }, 500);
+				}, 500);
+				//document.getElementById('spons_button_above').style.display="none";
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#slider').rhinoslider({
+					effect: 'explode',
+					effectTime:1500,
+					showTime:5000,
+					autoPlay:true
+				});
+			});
+		</script>
+		<div id="large-header" class="large-header" style='z-index:99999;'>
+			<canvas id="demo-canvas" style='z-index:99999999;'></canvas>
+		</div>
+		<!-- cursor -->
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/demo-1.js"></script>
+		<!-- cursor -->
+	</body>
+</html>
